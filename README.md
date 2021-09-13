@@ -57,7 +57,7 @@ Syntax
     -h    home directory
 
 Example:
-> # check-itcam.sh  -h /opt/IBM/WebSphere/AppServer
+> $ check-itcam.sh  -h /opt/IBM/WebSphere/AppServer
           
 Sample execution flow
 ----------------------
@@ -70,27 +70,27 @@ Sample execution flow
     INFO Collecting required data from WebSphere using wsadmin
     INFO Executing /usr/WebSphere85/ProcServer//bin/wsadmin.sh -lang jython -f tmp.itcamdc.wsadminScript.py
     INFO Data successfully collected from WebSphere
-    INFO   CellMgrHostname=sp276w05.viessmann.com
+    INFO   CellMgrHostname=dmgr.bavaria.com
     INFO   Cellname=ProcStageCell
     INFO   Nodename=ProcStageNode01
-    INFO   Running on host sp212w05.viessmann.com
+    INFO   Running on host stage.munich.com
     INFO   DMGR SOAP connector address returned by wsadmin is: 18880
     INFO Collecting profile information using manageprofiles.sh
-    INFO Existing profiles: ProcStageNode01.
-    INFO PROFILENAME=ProcStageNode01
+    INFO Existing profiles: StageNode01.
+    INFO PROFILENAME=StageNode01
     -----------------------------
     INFO Display Server's status
     INFO for /usr/WebSphere85/ProcServer/:
-    INFO     StageProcSupport_Node01        running    PID=22806952 DCHOME=/itm/aix533/yn/wasdc/7.2.0.0.17/itcamdc
-    INFO     StageProcMsg_Node01            running    PID=15860206 DCHOME=/itm/aix533/yn/wasdc/7.2.0.0.17/itcamdc
-    INFO     StageProc_Node01               running    PID=19726692 DCHOME=/itm/aix533/yn/wasdc/7.2.0.0.17/itcamdc
-    INFO     StageProc_Node01_2             running    PID=13566282 DCHOME=/itm/aix533/yn/wasdc/7.2.0.0.17/itcamdc
+    INFO     StageProcSupport         running    PID=22806952 DCHOME=/opt/IBM/ITM/yn/aix533/yn/wasdc/7.2.0.0.17/itcamdc
+    INFO     StageProcMsg             running    PID=15860206 DCHOME=/opt/IBM/ITM/yn/aix533/yn/wasdc/7.2.0.0.17/itcamdc
+    INFO     StageProc01              running    PID=19726692 DCHOME=/opt/IBM/ITM/yn/wasdc/7.2.0.0.17/itcamdc
+    INFO     StageProc01_2            running    PID=13566282 DCHOME=/opt/IBM/ITM/yn/wasdc/7.2.0.0.17/itcamdc
     --------------------------------------------------
     INFO "server.xml" shows DC Versions configured:
-    INFO     StageProcSupport_Node01        7.2.0.0.17
-    INFO     StageProcMsg_Node01            7.2.0.0.17
-    INFO     StageProc_Node01               7.2.0.0.17
-    INFO     StageProc_Node01_2             7.2.0.0.17
+    INFO     StageProcSupport        7.2.0.0.17
+    INFO     StageProcMsg            7.2.0.0.17
+    INFO     StageProc01             7.2.0.0.17
+    INFO     StageProc01_2           7.2.0.0.17
     INFO procedure successfully ended
     bash-5.0$
 
