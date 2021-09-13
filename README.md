@@ -4,7 +4,7 @@ Author: Richard Niewolik
 
 Contact: niewolik@de.ibm.com
 
-Revision: 2.2
+Revision: 1.0
 
 #
 
