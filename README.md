@@ -22,7 +22,7 @@ Revision: 1.0
 1 General
 =========
 
-Often, multiple ITCAM Data Collector for WebSphere are running on one host. Sometimes they are not all configured with the same version. And sometimes the version the data collector is running with is not the configured version. To check this, several steps are required. You can use this script to quickly check the configuration and operational status. This is especially helpful if you want to migrate or update an existing installation.
+Often, multiple ITCAM Data Collector (DC) for WebSphere are running on one host. Sometimes they are not all configured with the same version. And sometimes the version the data collector is running with is not the configured version (can happen when server restart was missed after DC configuration steps). To check this, normally several steps are required. You can use this script to quickly check the configuration and operational status. This is especially helpful if you want to migrate or update an existing installation.
 
  
 2 Installation
@@ -81,15 +81,15 @@ Sample execution flow
     -----------------------------
     INFO Display Server's status
     INFO for /usr/WebSphere85/ProcServer/:
-    INFO     StageProcSupport         running    PID=22806952 DCHOME=/opt/IBM/ITM/yn/aix533/yn/wasdc/7.2.0.0.17/itcamdc
-    INFO     StageProcMsg             running    PID=15860206 DCHOME=/opt/IBM/ITM/yn/aix533/yn/wasdc/7.2.0.0.17/itcamdc
-    INFO     StageProc01              running    PID=19726692 DCHOME=/opt/IBM/ITM/yn/wasdc/7.2.0.0.17/itcamdc
-    INFO     StageProc01_2            running    PID=13566282 DCHOME=/opt/IBM/ITM/yn/wasdc/7.2.0.0.17/itcamdc
+    INFO     StageProcSupport         running    PID=22806952 DCHOME=/opt/IBM/ITM/aix533/yn/wasdc/7.2.0.0.17/itcamdc
+    INFO     StageProcMsg             running    PID=15860206 DCHOME=/opt/IBM/ITM/aix533/yn/wasdc/7.2.0.0.17/itcamdc
+    INFO     StageProc01              running    PID=19726692 DCHOME=/opt/IBM/ITM/aix533/yn/wasdc/7.2.0.0.17/itcamdc
+    INFO     StageProc01_2            running    PID=13566282 DCHOME=/opt/IBM/ITM/aix533/yn/wasdc/7.2.0.0.17/itcamdc
     --------------------------------------------------
     INFO "server.xml" shows DC Versions configured:
     INFO     StageProcSupport        7.2.0.0.17
-    INFO     StageProcMsg            7.2.0.0.17
-    INFO     StageProc01             7.2.0.0.17
+    INFO     StageProcMsg            7.2.0.0.15
+    INFO     StageProc01             7.2.0.0.15
     INFO     StageProc01_2           7.2.0.0.17
     INFO procedure successfully ended
     bash-5.0$
