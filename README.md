@@ -62,13 +62,13 @@ Example:
 Sample execution flow
 ----------------------
 
-    bash-5.0$ /dmz_sw/itm/itmtools/itcam_check.sh -h /usr/WebSphere85/ProcServer/
+    bash-5.0$ itcam_check.sh -h /opt/WebSphere85/ProcServer/
     INFO Script Version 2
     INFO Check options
-    INFO WASHOME=/usr/WebSphere85/ProcServer/
-    INFO WSADMIN_HOME=/usr/WebSphere85/ProcServer//bin
+    INFO WASHOME=/opt/WebSphere85/ProcServer/
+    INFO WSADMIN_HOME=/opt/WebSphere85/ProcServer//bin
     INFO Collecting required data from WebSphere using wsadmin
-    INFO Executing /usr/WebSphere85/ProcServer//bin/wsadmin.sh -lang jython -f tmp.itcamdc.wsadminScript.py
+    INFO Executing /opt/WebSphere85/ProcServer//bin/wsadmin.sh -lang jython -f tmp.itcamdc.wsadminScript.py
     INFO Data successfully collected from WebSphere
     INFO   CellMgrHostname=dmgr.bavaria.com
     INFO   Cellname=ProcStageCell
@@ -80,7 +80,7 @@ Sample execution flow
     INFO PROFILENAME=StageNode01
     -----------------------------
     INFO Display Server's status
-    INFO for /usr/WebSphere85/ProcServer/:
+    INFO for /opt/WebSphere85/ProcServer/:
     INFO     StageProcSupport         running    PID=22806952 DCHOME=/opt/IBM/ITM/aix533/yn/wasdc/7.2.0.0.17/itcamdc
     INFO     StageProcMsg             running    PID=15860206 DCHOME=/opt/IBM/ITM/aix533/yn/wasdc/7.2.0.0.17/itcamdc
     INFO     StageProc01              running    PID=19726692 DCHOME=/opt/IBM/ITM/aix533/yn/wasdc/7.2.0.0.17/itcamdc
